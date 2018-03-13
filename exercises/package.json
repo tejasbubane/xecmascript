@@ -29,17 +29,12 @@
       [
         "env",
         {
-          "targets": {
-            "node": "current"
-          },
-          "debug": true
+          "debug": true,
+          "targets": { "node": "current" }
         }
       ]
     ],
     "plugins": [
-      [
-        "transform-regenerator"
-      ],
       [
         "babel-plugin-transform-builtin-extend",
         {
@@ -47,6 +42,9 @@
             "Error"
           ]
         }
+      ],
+      [
+        "transform-regenerator"
       ]
     ]
   },

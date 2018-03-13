@@ -25,9 +25,21 @@
     ]
   },
   "babel": {
-    "presets": [["env",{"node": "current"}]
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          },
+          "debug": true
+        }
+      ]
     ],
     "plugins": [
+      [
+        "transform-regenerator"
+      ],
       [
         "babel-plugin-transform-builtin-extend",
         {
@@ -35,9 +47,6 @@
             "Error"
           ]
         }
-      ],
-      [
-        "transform-regenerator"
       ]
     ]
   },

@@ -1,7 +1,9 @@
-const ArgumentError = () => ({
-  name: 'argument error',
-  message: 'oops',
-});
+class ArgumentError extends Error {
+  constructor(message) {
+    super();
+    this.message = message || 'Invalid Arguments';
+  }
+};
 
 const re = new RegExp(/(plus|minus|divided by|multiplied by)+/g);
 

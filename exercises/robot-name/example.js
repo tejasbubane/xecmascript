@@ -61,5 +61,4 @@ export default class Robot {
   }
 }
 
-Robot.release_names = () => { shuffledPointer = -1; };
-Robot.reshuffle_names = shuffleNames;
+Robot.releaseNames = () => { shuffledPointer = -1; };
